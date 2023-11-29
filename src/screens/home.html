@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    
+    <!-- CSS-->
+
+    <link rel="stylesheet"  type="text/css" href="../styled/home_styles.css" /> 
+
+    <!-- FONTS -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+
+</head>
+
+
+<body>
+    <div id="nav-divs">
+        <div id="top-bar">
+            <h1>Portal InfoLife</h1>
+            <div id="topics">
+                <ul>
+                    <li><a href="#quem-somos">Quem Somos</a>
+                    </li>
+                    <li> <a href="#contribue">
+                        Contribua
+                    </a>                        
+                    </li>
+                    <li><a href="#contact-us">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="info-content" class="flex-box">
+            <div id="medium-page">
+
+                
+                <div id="search-content">
+
+                    <h1>
+                        Encontre o hemocentro mais próximo
+                    </h1>
+                </div>
+                <div>
+                    <input type="text" placeholder="Sua localização" class="search-bar" required/>
+                </div>
+                <div id="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.6845544113485!2d-51.13011002450035!3d-23.32720125303161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb43a356832085%3A0xd0fda787b35ced9e!2sHemocentro%20Regional%20de%20Londrina%20-%20Hospital%20Universit%C3%A1rio!5e0!3m2!1spt-BR!2sbr!4v1701274791178!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+
+                </div>
+            </div>        
+        </div>
+
+        <div id="quem-somos">
+            <div id="blood-icon">
+                <img src="../assets/sangue-icon.png" alt="sangue-icon">
+            </div>
+            <div id="about-us">
+                <h1>
+                    Quem Somos?
+                </h1>
+                <h3>
+                    O InfoLife surgiu atráves da ideia de dois estudantes de Análise e Desenvolvimento de Sistemas. </p> 
+                    O intuito deste serviço é solucionar problemas enfrentado diariamente em Hemocentros, quanto a disponibilidade de sangue e demanda. </p>
+                    Sendo assim, facilitando o acesso a todos, tanto pacientes quanto profissionais de saúde. 
+                </h3>
+
+            </div>
+        </div>
+
+        <div id="contribue">
+            <div id="contacts-infos">
+                <div id="donate">
+                    <h1>
+                        Gostaria de contribuir conosco? </p>
+                        Faça uma doação. 
+                    </h1>
+                    
+                    <button>
+                        Doar
+                    </button>   
+                </div>
+                <div>
+                    <img src="../assets/doacao-icon.png" alt="doacao" />
+                </div>
+                
+            </div>
+
+            <div id="contact-us" >
+                <div id="our-contacts">
+                    <div id="socials">
+                        <h1>
+                            Nosssas redes sociais.  
+                        </h1>
+                        <div id="social-icons">
+                            <img src="../assets/facebook-icon.svg" alt="facebook-icon">
+                            <img src="../assets/instagram-icon.svg" alt="instagram-icon">
+                            <img src="../assets/linkedin-icon.svg" alt="linkedin-icon">
+                        </div>
+                    </div>
+                    
+                    <div id="email-forms">
+                        <h3>
+                            Entre em contato conosco.   
+                        </h3>
+
+                        <div id="forms-content">
+                            <form>
+                                <label>Assunto:</label>
+                                <select name="motivo" id="motivo">
+                                    <option value="duvidas">
+                                        Dúvidas
+                                    </option>
+                                    <option value="feedback">
+                                        Feedback
+                                    </option>
+                                    <option value="others">
+                                        Outros assuntos
+                                    </option>
+
+                                </select>
+                            </form>
+
+                            <form>
+                                <label>Descrição:</label>
+                                <input type="text" id="description" />
+                            </form>
+                            <input type="submit" value="Enviar" />
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
