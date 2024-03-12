@@ -1,11 +1,45 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Screen
+    </title>
+
+    <!-- CSS-->
+
+    <link rel="stylesheet"  type="text/css" href="../styled/login_styles.css" /> 
+
+    <!-- FONTS -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
 </head>
 <body>
+
+    <form>
+        <h3> Bem vindo ao InfoLife</h3>
+
+        <input type="text" placeholder="Usuário" id="login">
+        <input type="password" placeholder="Senha" id="password">
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+
+    <script>
+
+        function logar() {
+            var login = document.getElementById('login').value;
+            var password = document.getElementById('password').value;
+
+            if(login == "admin" && password == "admin"){
+                location.href = "home.html"; 
+            }else{
+                alert("Usuário ou senha incorretas.")
+            }
+        }
+    </script>
     
 </body>
-</html> -->
+</html>
